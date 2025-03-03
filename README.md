@@ -1,5 +1,14 @@
 # my？
 
+所以在本地就在该项目的根目录下打开cmd，然后用npm run dev得到运行结果，可以debug。立刻更新
+
+![1741020622681](image/README/1741020622681.png)
+
+上传到git push上去后，在网页上就可以用下面这个图这个地方去部署到页面
+
+![1741020461772](image/README/1741020461772.png)
+
+
 # Research project page template
 
 This is a template you can use to build a project page for your research paper, adapted from the original [Nerfies page](https://nerfies.github.io/). It's designed to be easy to set up for those without web development experience, but web developers will appreciate that it's flexible and built with modern, familiar technologies. See a live demo of the template [here](https://research-template.roman.technology).
