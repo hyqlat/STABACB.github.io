@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Layout.astro
-title: Research Project Page Template
+title: Guess what #Stochastic Human Motion Prediction with Memory of Action Transition and Action Characteristic
 description: Simple project page template for your research paper, built with Astro and Tailwind CSS
 favicon: favicon.svg
 thumbnail: screenshot.png
@@ -31,8 +31,8 @@ export const components = {pre: CodeBlock, table: Table}
   authors={[
     {
       name: "AT",
-      /*url: "https://roman.technology",*/
-      institution: "hhh",
+      url: "https://github.com/hyqlat",
+      institution: "xxxx",
       notes: ["*", "†"],
     },
     {
@@ -69,7 +69,7 @@ export const components = {pre: CodeBlock, table: Table}
     },
     {
       name: "Code",
-      url: "",
+      url: "https://github.com/hyqlat",
       icon: "ri:github-line",
     },
     {
@@ -91,54 +91,19 @@ export const components = {pre: CodeBlock, table: Table}
 
 ## Abstract
 
-[here](https://github.com/RomanHauksson/academic-project-astro-template).  [Astro web framework](https://astro.build/) and styled with [Tailwind CSS](https://tailwindcss.com/). You write the content in [MDX](https://mdxjs.com/), which enables markdown formatting like **bold**, _italics_, and ~strikethrough~, as well as custom components like <SmallCaps>small caps.</SmallCaps>
+Welcome to hyatql's testing page.
 
 </HighlightedSection>
 
 ## Figures
 
-Use the figure component to display images, videos, equations, or any other element, with an optional caption.
-
 <Figure
-    caption="Diagram of the transformer deep learning architecture."
+    caption="what?"
   >
     <Image source={transformer} altText="Diagram of the transformer deep learning architecture." />
 </Figure>
 
-## Two columns
-
-Use the two columns component to display two columns of content. In this example, the first column contains a figure with a YouTube video and the second column contains a figure with a custom [React](https://react.dev/) component. By default, they display side by side, but if the screen is narrow enough (for example, on mobile), they're arranged vertically.
-
-<TwoColumns>
-  <Figure slot="left" caption="Take a look at this YouTube video.">
-    <YouTubeVideo videoId="wjZofJX0v4M" />
-  </Figure>
-  <Figure slot="right" caption="Now look at this Gaussian Splat, rendered with a React component.">
-    <Splat client:idle />
-  </Figure>
-</TwoColumns>
-
-## Heading levels
-
-Use headings to divide your content into sections.
-
-### Heading 3
-
-Go down a level to heading 3...
-
-#### Heading 4
-
-...and down again to heading 4.
-
-## LaTeX
-
-You can also add LaTeX formulas, rendered during the build process using [KaTeX](https://katex.org/) so they're quick to load for visitors of your project page. You can write them inline, like this: <LaTeX inline formula="a^2 + b^2 = c^2" />. Or, you can write them as a block:
-
-<LaTeX formula="\int_a^b f(x) dx" />
-
 ## Tables
-
-You can add simple tables using [GitHub Flavored Markdown syntax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables):
 
 | Model | Accuracy | F1 score | Training time (hours) |
 | :--- | :---: | :---: | :---: |
