@@ -20,6 +20,9 @@ import LaTeX from "../components/LaTeX.astro";
 
 import outside from "../assets/pass_2_drink_0.mp4";
 import transformer from "../assets/transformer.webp";
+import overview from "../assets/overview.jpg"
+import vis1 from "../assets/inspect_0_drink_0.mp4"
+import vis2 from "../assets/drink_0_drink_0.mp4"
 import Splat from "../components/Splat.tsx"
 
 import CodeBlock from "../components/CodeBlock.astro";
@@ -88,38 +91,32 @@ export const components = {pre: CodeBlock, table: Table}
 
 <Video source={outside} />
 
+## Overview
+
+<Figure
+    caption="Overview of our model."
+  >
+    <Image source={overview} altText="Diagram of the model overview." />
+</Figure>
+
 <HighlightedSection>
 
 ## Abstract
 
-Welcome to hyatql's testing page.
+Action-driven stochastic human motion prediction aims to generate future motion sequences of a pre-defined target action based on given past observed sequences performing non-target actions. This task primarily presents two challenges. Firstly, generating smooth transition motions is hard due to the vary transition speed of different actions. Secondly, the action characteristic is difficult to be learned because of the similarity of some actions. These issues cause the predicting results being unreasonable and inconsistent. As a result, we propose two memory banks, the Soft-transition Action Bank (STAB) and Action Characteristic Bank (ACB), to tackle the problems above. The STAB stores the action transition information. It is equiped with the novel soft searching approach, which encourages the model to focus on multiple possible action categories of observed motions. The ACB records action characteristic, which produces more prior information for predicting certain action. To fuse the features retrieved from two banks better, we further propose the Adaptive Attention Adjustment (AAA) strategy. Extensive experiments on four motion prediction datasets demonstrate that our approach consistently outperforms the previous state-of-the-art.
 
 </HighlightedSection>
 
-## Figures
 
-<Figure
-    caption="what?"
-  >
-    <Image source={transformer} altText="Diagram of the transformer deep learning architecture." />
-</Figure>
+## Visualization
 
-## Tables
-
-| Model | Accuracy | F1 score | Training time (hours) |
-| :--- | :---: | :---: | :---: |
-| BERT-base | 0.89 | 0.87 | 4.5 |
-| RoBERTa-large | 0.92 | 0.91 | 7.2 |
-| DistilBERT | 0.86 | 0.84 | 2.1 |
-| XLNet | 0.90 | 0.89 | 6.8 |
+<TwoColumns>
+  <Video slot="left" source={vis1} />
+  <Video slot="right" source={vis2} />
+</TwoColumns>
 
 ## BibTeX citation
 
 ```bibtex
-@misc{roman2024academic,
-  author = "{Roman Hauksson}",
-  title = "Academic Project Page Template",
-  year = "2024",
-  howpublished = "\url{https://research-template.roman.technology}",
-}
+
 ```
