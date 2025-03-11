@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Layout.astro
-title: Guess what #Stochastic Human Motion Prediction with Memory of Action Transition and Action Characteristic
-description: Simple project page template for your research paper, built with Astro and Tailwind CSS
+title: Stochastic Human Motion Prediction with Memory of Action Transition and Action Characteristic 
+description: Project page for Stochastic Human Motion Prediction with Memory of Action Transition and Action Characteristic, built with Astro and Tailwind CSS
 favicon: favicon.svg
 thumbnail: screenshot.png
 ---
@@ -30,35 +30,36 @@ export const components = {pre: CodeBlock, table: Table}
   title={frontmatter.title}
   authors={[
     {
-      name: "AT",
+      name: "Jianwei Tang",
       url: "https://github.com/hyqlat",
-      institution: "xxxx",
-      notes: ["*", "†"],
+      institution: "Sun Yat-sen University",
+      notes: ["*"],
     },
     {
-      name: "Author Two",
-      institution: "Institution Two",
+      name: "Hong Yang",
+      institution: "Sun Yat-sen University",
       notes: ["*"]/*, "†"],*/
     },
     {
-      name: "Author Three",
-      institution: "Institution Three",
-      notes: ["†"],
+      name: "Tengyue Chen",
+      institution: "Sun Yat-sen University",
+      /* notes: ["†"], */
     },
     {
-      name: "Author Four",
-      institution: "Institution Four",
+      name: "Jian-Fang Hu",
+      institution: "Sun Yat-sen University",
+      notes: ["†"]
     },
   ]}
   conference="Conference on Computer Vision and Pattern Recognition 2025"
   notes={[
     {
       symbol: "*",
-      text: "author note one",
+      text: "Equal Contribution",
     },
     {
       symbol: "†",
-      text: "author note two",
+      text: "Corresponding Author",
     },
   ]}
   links={[
