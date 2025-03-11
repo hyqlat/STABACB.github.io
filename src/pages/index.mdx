@@ -21,8 +21,10 @@ import LaTeX from "../components/LaTeX.astro";
 import outside from "../assets/pass_2_drink_0.mp4";
 import transformer from "../assets/transformer.webp";
 import overview from "../assets/overview.jpg"
-import vis1 from "../assets/inspect_0_drink_0.mp4"
+import vis1 from "../assets/inspect_0_pass_0.mp4"
 import vis2 from "../assets/drink_0_drink_0.mp4"
+import vis3 from "../assets/lift_0_drink_0.mp4"
+import vis4 from "../assets/inspect_0_inspect_0.mp4"
 import Splat from "../components/Splat.tsx"
 
 import CodeBlock from "../components/CodeBlock.astro";
@@ -76,12 +78,12 @@ export const components = {pre: CodeBlock, table: Table}
       url: "https://github.com/hyqlat/STACB",
       icon: "ri:github-line",
     },
-    {
+    /*{
       name: "arXiv",
       url: "",
       icon: "academicons:arxiv",
     },
-    /*{
+    {
       name: "Bluesky",
       url: "",
       icon: "ri:bluesky-line"
@@ -115,8 +117,15 @@ Action-driven stochastic human motion prediction aims to generate future motion 
   <Video slot="right" source={vis2} />
 </TwoColumns>
 
+<TwoColumns>
+  <Video slot="left" source={vis3} />
+  <Video slot="right" source={vis4} />
+</TwoColumns>
+
 ## BibTeX citation
 
 ```bibtex
 
 ```
+
+{/* <Button> */}
